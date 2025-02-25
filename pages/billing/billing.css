@@ -1,0 +1,373 @@
+/* billing software  */
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 122px 20px;
+    text-align: center;
+}
+
+.section_heading h2 {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #222;
+    font-weight: 600;
+}
+
+.billing_software_row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+@media (min-width: 768px) {
+    .billing_software_row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.billing_software_col {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.billing_software_col:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.billing_software_img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.billing_software_details {
+    padding: 25px;
+}
+
+.billing_software_titel {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.billing_software_dec {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+
+/* quick features  */
+
+.quick_simple_billing {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgb(254 242 242);
+}
+
+.quick-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.quick_title_paragh {
+    margin-bottom: 40px;
+}
+
+.quick_title {
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: 600;
+}
+
+.quick_paragph {
+    font-size: 1rem;
+    color: #555;
+    max-width: 605px;
+    margin: auto;
+}
+
+.quick_simple_feature {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.quick_feature_img {
+    flex: 1 1 500px;
+    text-align: center;
+}
+
+.quick_feature_img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quick_features_all {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    flex: 1 1 500px;
+    text-align: center;
+}
+
+.feature_simple {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature_simple:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature_simple img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.feature_simple p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* pp billing software  */
+
+.more_with_pp {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.pp-container {
+    max-width: 1200px;
+    margin: 60px;
+}
+
+.section_heading h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.section_heading p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.more_with_pp_row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.more_with_pp_col {
+    background: linear-gradient(135deg, #ffffff, #f3f3f3);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.more_with_pp_col img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.more_with_pp_col h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.more_with_pp_col p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.more_with_pp_col:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+}
+
+
+/* Happy Customers Section */
+/* General Section Styling */
+.happy_customer {
+    padding: 80px 20px;
+    background-color: rgb(254 242 242);
+}
+
+.customer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Top Section: Heading & Statistics */
+.happy_customer_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.section_heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 50px;
+}
+
+.section_heading p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Calculation Boxes */
+.happy_customer_calculations {
+    display: flex;
+    gap: 30px;
+}
+
+.happy_customer_calculation_col {
+    background: linear-gradient(135deg, #ffffff, #f1f3f5);
+    padding: 15px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.happy_customer_calculation_col:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.counter_digit {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.counter_symbol {
+    font-size: 1.5rem;
+    color: #ff6600;
+}
+
+.counter_desc {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Bottom Section: Testimonial & Image */
+.happy_customer_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Testimonial Content */
+.testimonial_content {
+    max-width: 600px;
+    background: linear-gradient(135deg, #fff, #f8f9fa);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial_text {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.testimonial_client {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.clients_brand img {
+    width: 150px;
+    margin-top: 10px;
+}
+
+/* Image Styling */
+.testimonial_image img {
+    width: 430px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .happy_customer_top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .happy_customer_calculations {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .happy_customer_bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial_image img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section_heading h2 {
+        font-size: 2rem;
+    }
+
+    .counter_digit {
+        font-size: 1.5rem;
+    }
+
+    .testimonial_text {
+        font-size: 1rem;
+    }
+
+    .testimonial_image img {
+        width: 200px;
+    }
+
+    .happy_customer_calculations {
+        gap: 15px;
+    }
+}

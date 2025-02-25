@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Get Real Time insightful Reports & Analytics with Petpooja</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+    <!-- AOS Library for Animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="./reporting.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a href="/index.html" class="petppoja-logo"
+          ><img
+            src="https://d28ewddc5mocr5.cloudfront.net/images/logo.svg"
+            class="navbar-brand fw-bold text-danger"
+            href="/index.html"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- POS Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="posDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                POS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="posDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./../billing/billing.html"
+                    ><img
+                      src="./../../billing.svg"
+                      alt="Billing Icon" />
+                    Billing <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./../inventory/inventory.html"
+                    ><img
+                      src="./../../inventory.svg"
+                      alt="Billing Icon" />
+                    Inventory <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./../onlineOrdering/onlineOrdering.html"
+                    ><img
+                      src="./../../online-ordering.svg"
+                      alt="Billing Icon" />
+                    Online Ordering<i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./../reporting/reporting.html"
+                    ><img
+                      src="./../../reporting.svg"
+                      alt="Billing Icon" />
+                    Reporting <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./../menu/menu.html"
+                    ><img src="./../../menu.svg" alt="Billing Icon" />
+                    Menu <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./../crm/crm.html"
+                    ><img src="./../../crm.svg" alt="Billing Icon" />
+                    CRM <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Outlet Types Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="outletDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Outlet Types
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="outletDropdown"
+                id="outletDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../fine-dine.svg"
+                      alt="Billing Icon" />
+                    Fine Dine <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img src="./../../qsr.svg" alt="Billing Icon" />
+                    QSR <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img src="./../../cafe.svg" alt="Billing Icon" />
+                    Cafe <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../food-court.svg"
+                      alt="Billing Icon" />
+                    Food Court <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../cloud-kitchen.svg"
+                      alt="Billing Icon" />Cloud Kitchen
+                    <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../ice-cream.svg"
+                      alt="Billing Icon" />
+                    Ice-Creams & Desserts <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../bakery.svg"
+                      alt="Billing Icon" />
+                    Bakery <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../bar-brewery.svg"
+                      alt="Billing Icon" />
+                    Bar & Brewery <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../pizzeria.svg"
+                      alt="Billing Icon" />
+                    Pizzeria <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../large-chain.svg"
+                      alt="Billing Icon" />
+                    Large Chain <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/pricing.html">Pricing</a>
+            </li>
+
+            <!-- Resources Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="resourcesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                <li>
+                  <a class="dropdown-item" href="./../about/about.html"
+                    >About Us <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Careers <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./../support/support.html"
+                    >Support <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="btn btn-danger btn-sm mt-1" href="#" id="bookDemoBtn"
+                >Book A Demo</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="header" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h1 class="fw-bold">
+                Real-time insightful reports of your restaurant
+            </h1>
+            <p class="lead">
+                Upload, manage, customise and download all your real-time business reports with Petpooja POS
+            </p>
+            <a href="#" class="btn btn-danger btn-lg pulse-button"
+              >Take a free demo</a
+            >
+          </div>
+          <div class="col-lg-6 text-center" data-aos="fade-left">
+            <img
+              src="https://d28ewddc5mocr5.cloudfront.net/images/pos/report-hero_md.webp"
+              alt="Restaurant POS"
+              class="img-fluid floating-image"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- scroll bottom-to-top  -->
+    <div id="scroll-top-btn" class="scroll_to_top_btn">
+      <svg
+        width="14"
+        height="8"
+        viewBox="0 0 14 8"
+        fill="currentcolor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.293 7.707a1 1 0 0 1 0-1.414L6.293 0.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L7 1.414 1.707 7.707a1 1 0 0 1-1.414 0Z"
+        />
+      </svg>
+    </div>
+
+    <!-- billing software  -->
+    <div class="wrapper">
+      <div class="section_heading">
+        <h2 class="titel_name">
+            Restaurant business reports made simpler
+        </h2>
+      </div>
+      <div class="billing_software_row">
+        <div class="billing_software_col">
+          <img
+            src="https://d28ewddc5mocr5.cloudfront.net/images/Online-ordering-integrations.webp"
+            alt="Customizable bill format"
+            class="billing_software_img"
+          />
+          <div class="billing_software_details">
+            <h4 class="billing_software_titel">Online ordering integrations</h4>
+            <p class="billing_software_dec">
+              Don’t shuffle between different screens to accept orders. Do all
+              of it and more from a single screen easily with Petpooja
+              restaurant PoS software! Seamlessly integrate your system with
+              Swiggy, Zomato, Dineout, etc., to increase your restaurant sales
+            </p>
+          </div>
+        </div>
+        <div class="billing_software_col">
+          <img
+            src="https://d28ewddc5mocr5.cloudfront.net/images/Regulate-menu-availability.webp"
+            alt="Multi-terminal billing"
+            class="billing_software_img"
+          />
+          <div class="billing_software_details">
+            <h4 class="billing_software_titel">Regulate menu availability</h4>
+            <p class="billing_software_dec">
+              Add store timing, packaging charges, and discounts. Easily manage
+              the online menu for your single or chain outlets from one single
+              screen. Cross-check the stock availability with your Petpooja POS
+              system and toggle any online menu item On or Off as per your
+              inventory!
+            </p>
+          </div>
+        </div>
+        <div class="billing_software_col">
+          <img
+            src="https://d28ewddc5mocr5.cloudfront.net/images/Menu-updates-changes.webp"
+            alt="Station-wise kot printing"
+            class="billing_software_img"
+          />
+          <div class="billing_software_details">
+            <h4 class="billing_software_titel">Menu updates & changes</h4>
+            <p class="billing_software_dec">
+              Easily add new menu items, offer different kinds of packaging and
+              delicious add-ons, launch special offers or update menu prices
+              across all your aggregators without hassles with your Petpooja
+              restaurant billing software
+            </p>
+          </div>
+        </div>
+        <div class="billing_software_col">
+          <img
+            src="https://d28ewddc5mocr5.cloudfront.net/images/Online-order-reconciliation.webp"
+            alt="Table and area management"
+            class="billing_software_img"
+          />
+          <div class="billing_software_details">
+            <h4 class="billing_software_titel">Online order reconciliation</h4>
+            <p class="billing_software_dec">
+              Petpooja POS tracks and compiles platform-wise reconciled reports
+              about your online orders, their commission rate, surplus charges,
+              profit margins, taxes, etc., so that you don’t lose your
+              hard-earned profits to wrongful payout reports
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- quick features -->
+    <section class="quick_simple_billing">
+      <div class="quick-container">
+        <div class="quick_title_paragh">
+          <h2 class="quick_title">Quick & Simple</h2>
+          <p class="quick_paragph">
+            Petpooja restaurant billing software works easily with any existing
+            infrastructure
+          </p>
+        </div>
+        <div class="quick_simple_feature">
+          <div class="quick_feature_img">
+            <img
+              src="https://d28ewddc5mocr5.cloudfront.net/images/pos/Quick-simple_md.webp"
+              alt="Quick Simple Features"
+            />
+          </div>
+          <div class="quick_features_all">
+            <div class="feature_simple">
+              <img
+                src="https://d28ewddc5mocr5.cloudfront.net/images/pos/Offline.webp"
+                alt="Works offline, cloud-based software"
+              />
+              <p>Works offline, cloud-based software</p>
+            </div>
+            <div class="feature_simple">
+              <img
+                src="https://d28ewddc5mocr5.cloudfront.net/images/pos/Any-hardware.webp"
+                alt="Works on any hardware"
+              />
+              <p>Works on any hardware</p>
+            </div>
+            <div class="feature_simple">
+              <img
+                src="https://d28ewddc5mocr5.cloudfront.net/images/pos/Core-Modules-Common.webp"
+                alt="Works on major Operating systems"
+              />
+              <p>Works on major Operating systems</p>
+            </div>
+            <div class="feature_simple">
+              <img
+                src="https://d28ewddc5mocr5.cloudfront.net/images/pos/Keyboard_touch.webp"
+                alt="Keyboard / touchscreen view"
+              />
+              <p>Keyboard / touchscreen view</p>
+            </div>
+            <div class="feature_simple">
+              <img
+                src="https://d28ewddc5mocr5.cloudfront.net/images/pos/QR-code.webp"
+                alt="QR scan & order"
+              />
+              <p>QR scan & order</p>
+            </div>
+            <div class="feature_simple">
+              <img
+                src="https://d28ewddc5mocr5.cloudfront.net/images/pos/E-bill.webp"
+                alt="E-bill receipts"
+              />
+              <p>E-bill receipts</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pp billing software -->
+    <section class="more_with_pp">
+      <div class="pp-container">
+        <div class="section_heading">
+          <h2 class="title_name">
+            Do a lot more with one restaurant billing software
+          </h2>
+          <p class="title_desc">
+            Petpooja is the all-in-one restaurant billing POS system that
+            handles all your operations on a single screen.
+          </p>
+        </div>
+        <div class="more_with_pp_row">
+          <a class="more_with_pp_col" href="/online-order-management-software">
+            <img
+              src="https://d28ewddc5mocr5.cloudfront.net/images/pos/Online-Ordering.webp"
+              alt="Online Order Management"
+            />
+            <h3>Online Order Management</h3>
+            <p>
+              A POS system that provides you with the complete picture of your
+              online order sales, aggregator commissions, and more.
+            </p>
+          </a>
+          <a class="more_with_pp_col" href="/reports-and-analytics">
+            <img
+              src="https://d28ewddc5mocr5.cloudfront.net/images/pos/Reporting.webp"
+              alt="Restaurant Rights and Reports"
+            />
+            <h3>Restaurant Rights and Reports</h3>
+            <p>
+              Access multiple restaurant business reports and regulate staff
+              rights to avoid fraud and pilferage.
+            </p>
+          </a>
+          <a
+            class="more_with_pp_col"
+            href="/restaurant-inventory-management-software"
+          >
+            <img
+              src="https://d28ewddc5mocr5.cloudfront.net/images/pos/Inventory.webp"
+              alt="Inventory Management"
+            />
+            <h3>Inventory Management</h3>
+            <p>
+              Track inventory purchases, recipe costs, and raw material price
+              trends with our inventory software.
+            </p>
+          </a>
+          <a
+            class="more_with_pp_col"
+            href="/restaurant-menu-management-software"
+          >
+            <img
+              src="https://d28ewddc5mocr5.cloudfront.net/images/pos/Menu.webp"
+              alt="Menu Management"
+            />
+            <h3>Menu Management</h3>
+            <p>
+              Create and customize online menus for your restaurant, toggling
+              items ON/OFF based on stock availability.
+            </p>
+          </a>
+          <a
+            class="more_with_pp_col"
+            href="/restaurant-customer-management-software"
+          >
+            <img
+              src="https://d28ewddc5mocr5.cloudfront.net/images/pos/Crm.webp"
+              alt="CRM"
+            />
+            <h3>CRM</h3>
+            <p>
+              Create customer data pools and provide personalized experiences to
+              earn their loyalty.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- happy customer section  -->
+    <section class="happy_customer">
+      <div class="customer-container">
+        <!-- Top Section: Heading & Stats -->
+        <div class="happy_customer_top">
+          <div class="section_heading">
+            <h2 class="title_name">75,000+ happy customers</h2>
+            <p class="title_desc">
+              Our customers are boosting their businesses with Petpooja POS
+            </p>
+          </div>
+          <div class="happy_customer_calculations">
+            <div class="happy_customer_calculation_col">
+              <h4 class="counter_digit">25%</h4>
+              <p class="counter_desc">of Swiggy/Zomato orders handled</p>
+            </div>
+            <div class="happy_customer_calculation_col">
+              <h4 class="counter_digit">150+</h4>
+              <p class="counter_desc">integrations to support your business</p>
+            </div>
+            <div class="happy_customer_calculation_col">
+              <h4 class="counter_digit">8 Lakh+</h4>
+              <p class="counter_desc">orders handled in a single day</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section: Testimonial & Image -->
+        <div class="happy_customer_bottom">
+          <div class="testimonial_content">
+            <p class="testimonial_text">
+              "The software is well-designed to manage large volumes of online
+              orders from different third-party platforms. Tracking our online
+              orders has become very simple and secure."
+            </p>
+            <div class="testimonial_client">
+              <p class="client_name">Shafiq Mohammad,</p>
+              <p class="client_role">Co-partner</p>
+            </div>
+            <div class="clients_brand">
+              <img
+                src="https://d28ewddc5mocr5.cloudfront.net/images/testimonial/Al-bek.webp"
+                alt="Yangkiez-momos"
+              />
+            </div>
+          </div>
+          <div class="testimonial_image">
+            <img
+              src="https://d28ewddc5mocr5.cloudfront.net/images/testimonial/Shafiq-Mohammad-Al-Baik_md.webp"
+              alt="Aditi Madan"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- free demo section  -->
+    <div class="demo-section container my-5" id="demoForm">
+      <div class="row align-items-center">
+        <!-- Left Side: Form -->
+        <div class="col-md-5">
+          <h2>Schedule a Free Demo</h2>
+          <p>Get in touch with our team to clarify your queries</p>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="city" class="form-label">City</label>
+              <input
+                type="text"
+                class="form-control"
+                id="city"
+                name="city"
+                placeholder="Enter your city"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="restaurant" class="form-label">Restaurant Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="restaurant"
+                name="restaurant"
+                placeholder="Enter restaurant name"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Schedule Demo</button>
+          </form>
+        </div>
+        <!-- Right Side: Image -->
+        <div class="col-md-5">
+          <img
+            src="https://d28ewddc5mocr5.cloudfront.net/images/scheduale-form_md.webp"
+            alt="Restaurant Demo"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Explore Add-ons Section -->
+    <section class="explore-section">
+      <div class="explore-container">
+        <div class="explore-header">
+          <h3>Explore Add-ons that boost your business</h3>
+          <p>
+            All-in-one restaurant billing POS system that handles all your
+            operations on a single screen
+          </p>
+        </div>
+
+        <div class="blaze-track-container">
+          <div class="swiper-wrapper blaze-track">
+            <!-- Customer Service -->
+            <div class="swiper-slide">
+              <div class="explore_slider_subtitle">
+                <h5 class="explore_subtitle">Customer Service</h5>
+              </div>
+              <div class="explore_subboxes">
+                <div class="expboxes_img_paragh">
+                  <a href="/waiter-calling-system">
+                    <div class="exp_level_icons">
+                      <img
+                        src="./../../waiter-calling-system.svg"
+                        alt="Waiter Calling System"
+                      />
+                    </div>
+                    <p class="exploresubbox_paragh">Waiter calling system</p>
+                  </a>
+                </div>
+                <div class="expboxes_img_paragh">
+                  <a href="/food-ordering-kiosk">
+                    <div class="exp_level_icons">
+                      <img
+                        src="./../../voice-ordering-kiosk.svg"
+                        alt="Voice Ordering Kiosk"
+                      />
+                    </div>
+                    <p class="exploresubbox_paragh">Voice ordering kiosk</p>
+                  </a>
+                </div>
+                <div class="expboxes_img_paragh">
+                  <a href="/scan-and-order">
+                    <div class="exp_level_icons">
+                      <img
+                        src="./../../scan-pay.svg"
+                        alt="Scan & Pay"
+                      />
+                    </div>
+                    <p class="exploresubbox_paragh">Scan & Pay</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Analytics -->
+            <div class="swiper-slide">
+              <div class="explore_slider_subtitle">
+                <h5 class="explore_subtitle">Analytics</h5>
+              </div>
+              <div class="explore_subboxes">
+                <div class="expboxes_img_paragh">
+                  <a href="/online-order-reconciliation">
+                    <div class="exp_level_icons">
+                      <img
+                        src="./../../online-order-reconcillation.svg"
+                        alt="Online Order Reconciliation"
+                      />
+                    </div>
+                    <p class="exploresubbox_paragh">
+                      Online order reconciliation
+                    </p>
+                  </a>
+                </div>
+                <div class="expboxes_img_paragh">
+                  <a href="/restaurant-analytics-insights">
+                    <div class="exp_level_icons">
+                      <img
+                        src="./../../Insights.svg"
+                        alt="Dynamic Reports"
+                      />
+                    </div>
+                    <p class="exploresubbox_paragh">Dynamic reports</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CRM -->
+            <div class="swiper-slide">
+              <div class="explore_slider_subtitle">
+                <h5 class="explore_subtitle">CRM</h5>
+              </div>
+              <div class="explore_subboxes">
+                <div class="expboxes_img_paragh">
+                  <a href="/restaurant-website">
+                    <div class="exp_level_icons">
+                      <img
+                        src="./../../business-website.svg"
+                        alt="Business Website"
+                      />
+                    </div>
+                    <p class="exploresubbox_paragh">Business website</p>
+                  </a>
+                </div>
+                <div class="expboxes_img_paragh">
+                  <a href="/restaurant-loyalty-program">
+                    <div class="exp_level_icons">
+                      <img
+                        src="./../../loyalty-wallet.svg"
+                        alt="Loyalty Wallet"
+                      />
+                    </div>
+                    <p class="exploresubbox_paragh">Loyalty wallet</p>
+                  </a>
+                </div>
+                <div class="expboxes_img_paragh">
+                  <a href="/restaurant-sms-service">
+                    <div class="exp_level_icons">
+                      <img
+                        src="./../../sms-marketing.svg"
+                        alt="SMS Marketing"
+                      />
+                    </div>
+                    <p class="exploresubbox_paragh">SMS marketing</p>
+                  </a>
+                </div>
+                <div class="expboxes_img_paragh">
+                  <a href="/customer-feedback-management">
+                    <div class="exp_level_icons">
+                      <img
+                        src="./../../customer-feedback.svg"
+                        alt="Customer Feedback"
+                      />
+                    </div>
+                    <p class="exploresubbox_paragh">Customer feedback</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Operations -->
+            <div class="swiper-slide">
+              <div class="explore_slider_subtitle">
+                <h5 class="explore_subtitle">Operations</h5>
+              </div>
+              <div class="explore_subboxes">
+                <div class="expboxes_img_paragh">
+                  <a href="/captain-ordering-app">
+                    <div class="exp_level_icons">
+                      <img
+                        src="./../../captain-oprdering.svg"
+                        alt="Captain App"
+                      />
+                    </div>
+                    <p class="exploresubbox_paragh">Captain app</p>
+                  </a>
+                </div>
+                <div class="expboxes_img_paragh">
+                  <a href="/online-order-token-management">
+                    <div class="exp_level_icons">
+                      <img
+                        src="./../../token-management.svg"
+                        alt="Token Management"
+                      />
+                    </div>
+                    <p class="exploresubbox_paragh">Token management</p>
+                  </a>
+                </div>
+                <div class="expboxes_img_paragh">
+                  <a href="/kitchen-display-system">
+                    <div class="exp_level_icons">
+                      <img
+                        src="./../../kitchen-display-service.svg"
+                        alt="Kitchen Display Service"
+                      />
+                    </div>
+                    <p class="exploresubbox_paragh">Kitchen display service</p>
+                  </a>
+                </div>
+                <div class="expboxes_img_paragh">
+                  <a href="/reservation-manager">
+                    <div class="exp_level_icons">
+                      <img
+                        src="./../../que-management.svg"
+                        alt="Reservation Manager"
+                      />
+                    </div>
+                    <p class="exploresubbox_paragh">Reservation Manager</p>
+                  </a>
+                </div>
+                <div class="expboxes_img_paragh">
+                  <a href="/petpooja-pay">
+                    <div class="exp_level_icons">
+                      <img
+                        src="./../../petpooja-pay.svg"
+                        alt="Petpooja Pay"
+                      />
+                    </div>
+                    <p class="exploresubbox_paragh">Petpooja Pay</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blogs section  -->
+    <section class="blog section_spacing_y">
+      <div class="wrapper">
+        <div class="section_heading">
+          <h2 class="titel_name">Grow Your Restaurant</h2>
+        </div>
+        <div class="blog_row">
+          <div class="blog_col">
+            <div class="blod_content_row">
+              <picture>
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/inventory-blog/inventory-calculate_xs.webp
+                  "
+                  media="(max-width: 240px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/inventory-blog/inventory-calculate_sm.webp
+                  "
+                  media="(max-width: 320px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/inventory-blog/inventory-calculate_md.webp
+                  "
+                  media="(max-width: 480px)"
+                />
+                <img
+                  loading="lazy"
+                  src="https://d28ewddc5mocr5.cloudfront.net/images/online-order-blog/Swiggy-and-Zomato-delivery-boys_md.webp"
+                  alt="How To Calculate Your Kitchen Inventory Cost?"
+                  class="blog_img"
+                />
+              </picture>
+              <div class="blog_details">
+                <p class="blog_details_name">
+                  How to Start Online Ordering for your Restaurant?
+                </p>
+                <p class="blog_deeials_dec">
+                  The online ordering industry in India has grown tremendously
+                  in recent years. The quantity of food orders received by..
+                </p>
+                <a
+                  class="read_more"
+                  href="https://blog.petpooja.com/how-to-calculate-your-kitchen-inventory-cost/"
+                  target="_blank"
+                >
+                  Read more
+                  <svg
+                    width="21"
+                    height="16"
+                    viewBox="0 0 21 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.666 1L19.666 8M19.666 8L12.666 15M19.666 8L1.66602 8"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog_col">
+            <div class="blod_content_row">
+              <picture>
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/inventory-blog/inventory-management_xs.webp
+                  "
+                  media="(max-width: 240px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/inventory-blog/inventory-management_sm.webp
+                  "
+                  media="(max-width: 320px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/inventory-blog/inventory-management_md.webp
+                  "
+                  media="(max-width: 480px)"
+                />
+                <img
+                  loading="lazy"
+                  src="https://d28ewddc5mocr5.cloudfront.net/images/online-order-blog/online-ordering-customer_md.webp"
+                  alt="Best Restaurant Inventory Management Software"
+                  class="blog_img"
+                />
+              </picture>
+              <div class="blog_details">
+                <p class="blog_details_name">
+                  How To Retain Your Online Ordering Customers
+                </p>
+                <p class="blog_deeials_dec">
+                  Getting new customers is always exciting. But your business
+                  thrives only when you have loyal customers who visit you...
+                </p>
+                <a
+                  class="read_more"
+                  href="https://blog.petpooja.com/best-restaurant-inventory-management-software-a-complete-guide/"
+                  target="_blank"
+                >
+                  Read more
+                  <svg
+                    width="21"
+                    height="16"
+                    viewBox="0 0 21 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.666 1L19.666 8M19.666 8L12.666 15M19.666 8L1.66602 8"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog_col">
+            <div class="blod_content_row">
+              <picture>
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/inventory-blog/resturant-inventory_xs.webp
+                  "
+                  media="(max-width: 240px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/inventory-blog/resturant-inventory_sm.webp
+                  "
+                  media="(max-width: 320px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/inventory-blog/resturant-inventory_md.webp
+                  "
+                  media="(max-width: 480px)"
+                />
+                <img
+                  loading="lazy"
+                  src="https://d28ewddc5mocr5.cloudfront.net/images/online-order-blog/mistakes-ordering_md.webp"
+                  alt="How To Make The Best Out Of Your Restaurant Inventory"
+                  class="blog_img"
+                />
+              </picture>
+              <div class="blog_details">
+                <p class="blog_details_name">
+                  7 Mistakes Restaurants Should Avoid For Better Online Food
+                  Delivery
+                </p>
+                <p class="blog_deeials_dec">
+                  Running a restaurant can be an overwhelming experience. There
+                  are a million different things to look after on a..
+                </p>
+                <a
+                  class="read_more"
+                  href="https://blog.petpooja.com/restaurant-inventory/"
+                  target="_blank"
+                >
+                  Read more
+                  <svg
+                    width="21"
+                    height="16"
+                    viewBox="0 0 21 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.666 1L19.666 8M19.666 8L12.666 15M19.666 8L1.66602 8"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- billing faqs -->
+    <section class="billing_faqs">
+      <div class="billing-wrapper">
+        <h2 class="faq_title">FAQs</h2>
+        <div class="accordion_billing">
+          <div class="accordion_body active">
+            <div class="accordion_head">
+              <h4 class="accordion_title_pos">
+                Can I use rider management apps with my restaurant POS?
+              </h4>
+              <span class="icon">+</span>
+            </div>
+            <div class="accordion_content">
+              Petpooja’s restaurant billing software supports more than 150+
+              different third-party integrators, including ride management apps
+              like Duzno, Shadowfax, and Pidge
+            </div>
+          </div>
+
+          <div class="accordion_body">
+            <div class="accordion_head">
+              <h4 class="accordion_title_pos">
+                Can I use my own payment gateway for online orders?
+              </h4>
+              <span class="icon">+</span>
+            </div>
+            <div class="accordion_content">
+              Yes! You can use your Razorpay gateway at the website widget for
+              online orders.
+            </div>
+          </div>
+
+          <div class="accordion_body">
+            <div class="accordion_head">
+              <h4 class="accordion_title_pos">
+                How many food aggregators are integrated with Petpooja POS?
+              </h4>
+              <span class="icon">+</span>
+            </div>
+            <div class="accordion_content">
+              You can smoothly integrate multiple food aggregators with a single
+              Petpooja POS and use them all without hassle.
+            </div>
+          </div>
+
+          <div class="accordion_body">
+            <div class="accordion_head">
+              <h4 class="accordion_title_pos">
+                Do I have to pay to integrate zomato & swiggy into Petpooja
+                online ordering system?
+              </h4>
+              <span class="icon">+</span>
+            </div>
+            <div class="accordion_content">
+              Petpooja charges zero commission on integrating any third-party
+              aggregator with your restaurant POS. All you have to pay is the
+              charge to the aggregator
+            </div>
+          </div>
+
+          <div class="accordion_body">
+            <div class="accordion_head">
+              <h4 class="accordion_title_pos">
+                It is possible to reconcile online orders with a restaurant pos?
+              </h4>
+              <span class="icon">+</span>
+            </div>
+            <div class="accordion_content">
+              All your online orders are recorded in your POS system, so you can
+              easily reconcile them with the third-party payout sheets
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Footer Top Sections -->
+        <div class="row footer-top">
+          <div class="col-md-6 col-lg-3 footer-section">
+            <h3>POS</h3>
+            <ul>
+              <li>
+                <a href="./../billing/billing.html">Billing</a>
+              </li>
+              <li>
+                <a href="./../inventory/inventory.html">Inventory</a>
+              </li>
+              <li>
+                <a href="./../onlineOrdering/onlineOrdering.html"
+                  >Online Ordering</a
+                >
+              </li>
+              <li><a href="./../reporting/reporting.html">Reporting</a></li>
+              <li><a href="./../menu/menu.html">Menu</a></li>
+              <li><a href="./../crm/crm.html">CRM</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3 footer-section">
+            <h3>Outlet Types</h3>
+            <ul>
+              <li><a href="#">Fine Dine</a></li>
+              <li><a href="#">QSR</a></li>
+              <li><a href="#">Cafe</a></li>
+              <li><a href="#">Food Court</a></li>
+              <li><a href="#">Cloud Kitchen</a></li>
+              <li><a href="#">Ice-Creams & Desserts</a></li>
+              <li><a href="#">Bakery</a></li>
+              <li><a href="#">Bar & Brewery</a></li>
+              <li><a href="#">Pizzeria</a></li>
+              <li><a href="#">Lage Chain</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3 footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="/pricing.html">Pricing</a></li>
+              <li><a href="./../about/about.html">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li>
+                <a href="./../support/support.html">Support</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3 footer-section">
+            <h3>Innovit Tree Solutions</h3>
+            <ul>
+              <li>Email: info@innovittree.com</li>
+              <li>Phone: +1 234 567 890</li>
+              <li class="address">
+                Corp Office : 10th Floor, Parinee Cresenzo, C-30, G Block,
+                Bandra Kurla Complex, Bandra East, Mumbai - 400051
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social text-center">
+          <h2>Follow us on Social Media</h2>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom text-center">
+          <p class="copyright">© 2025 All rights reserved - Restaurant</p>
+          <p class="policy">
+            Privacy Policy | Terms & Conditions | Cancellation & Refund Policy
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./../../js/scrollTop.js"></script>
+    <script src="./../../js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f9fafb;
+}
+
+/* support section  */
+.support {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.support-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.support-card {
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.support-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #f0f4ff, #f8f9fa);
+}
+
+.support-card img {
+    max-width: 100px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.support-card:hover img {
+    transform: scale(1.15);
+}
+
+.support-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.4rem;
+    color: #222;
+    font-weight: 600;
+}
+
+.support-card p {
+    color: #555;
+    font-size: 1rem;
+    max-width: 85%;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .support-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .support-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .support-card {
+        padding: 30px;
+    }
+}
+
+
+/* support-review Section */
+.support-reviews {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.support-review-container {
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.support-review-container::-webkit-scrollbar {
+    display: none;
+}
+
+.support-review-item {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    scroll-snap-align: start;
+}
+
+.support-review-image img {
+    width: 300px;
+    object-fit: cover;
+}
+
+
+.support-review-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.support-review-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.rating span {
+    color: #ffcc00;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .support-review-container {
+        gap: 15px;
+    }
+
+    .support-review-item {
+        max-width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .support-review-image {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .support-review-image img {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .support-review-content {
+        margin-left: 0;
+    }
+
+    .support-review-content h3 {
+        font-size: 1rem;
+    }
+
+    .support-review-content p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra Small Mobile Screens (e.g. below 480px) */
+@media (max-width: 480px) {
+    .support-review-item {
+        padding: 15px;
+    }
+
+    .support-review-content h3 {
+        font-size: 1rem;
+    }
+
+    .support-review-content p {
+        font-size: 0.85rem;
+    }
+
+    .support-review-image img {
+        width: 150px;
+    }
+}
+
+
+/* Support Touch Section */
+.touch {
+    background-color: rgb(253, 245, 222);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.touch h1{
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+/* The container for all cards */
+.touch-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 1200px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Individual Touch Cards */
+.touch-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.touch-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Image Styling */
+.touch-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.touch-card img:hover {
+    transform: scale(1.1);
+}
+
+/* Card Title Styling */
+.touch-card h3 {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Card Text Styling */
+.touch-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .touch-container {
+        gap: 40px;
+        width: 300px;
+    }
+
+    .touch-card {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .touch-card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .touch-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .touch-card p {
+        font-size: 0.9rem;
+    }
+}

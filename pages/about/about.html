@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us | Petpooja</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+    <!-- AOS Library for Animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./../../style.css" />
+    <link rel="stylesheet" href="./about.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a href="./../../index.html" class="petppoja-logo"
+          ><img
+            src="https://d28ewddc5mocr5.cloudfront.net/images/logo.svg"
+            class="navbar-brand fw-bold text-danger"
+            href="./../../index.html"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- POS Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="posDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                POS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="posDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./../billing/billing.html"
+                    ><img
+                      src="./../../assets/billing.svg"
+                      alt="Billing Icon" />
+                    Billing <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./../inventory/inventory.html"
+                    ><img
+                      src="./../../assets/inventory.svg"
+                      alt="Billing Icon" />
+                    Inventory <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./../onlineOrdering/onlineOrdering.html"
+                    ><img
+                      src="./../../assets/online-ordering.svg"
+                      alt="Billing Icon" />
+                    Online Ordering<i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./../reporting/reporting.html"
+                    ><img
+                      src="./../../assets/reporting.svg"
+                      alt="Billing Icon" />
+                    Reporting <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./../menu/menu.html"
+                    ><img src="./../../assets/menu.svg" alt="Billing Icon" />
+                    Menu <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./../crm/crm.html"
+                    ><img src="./../../assets/crm.svg" alt="Billing Icon" />
+                    CRM <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Outlet Types Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="outletDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Outlet Types
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="outletDropdown"
+                id="outletDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../assets/fine-dine.svg"
+                      alt="Billing Icon" />
+                    Fine Dine <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img src="./../../assets/qsr.svg" alt="Billing Icon" />
+                    QSR <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img src="./../../assets/cafe.svg" alt="Billing Icon" />
+                    Cafe <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../assets/food-court.svg"
+                      alt="Billing Icon" />
+                    Food Court <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../assets/cloud-kitchen.svg"
+                      alt="Billing Icon" />Cloud Kitchen
+                    <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../assets/ice-cream.svg"
+                      alt="Billing Icon" />
+                    Ice-Creams & Desserts <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../assets/bakery.svg"
+                      alt="Billing Icon" />
+                    Bakery <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../assets/bar-brewery.svg"
+                      alt="Billing Icon" />
+                    Bar & Brewery <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../assets/pizzeria.svg"
+                      alt="Billing Icon" />
+                    Pizzeria <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./../../assets/large-chain.svg"
+                      alt="Billing Icon" />
+                    Large Chain <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/pricing.html">Pricing</a>
+            </li>
+
+            <!-- Resources Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="resourcesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./../about/about.html"
+                    >About Us <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Careers <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./../support/support.html"
+                    >Support <i class="fas fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="btn btn-danger btn-sm mt-1" href="#" id="bookDemoBtn"
+                >Book A Demo</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- about hero section  -->
+    <section class="about_hero">
+      <div class="about-wrapper">
+        <div class="section_heading">
+          <span class="title_tag">About us</span>
+          <h1 class="title_name">
+            Hey! We’re Petpooja and we help restaurants
+          </h1>
+          <p class="title_desc">
+            We deliver products that ensure revenue growth and the best customer
+            experience for all types of restaurant partners
+          </p>
+        </div>
+        <picture>
+          <source
+            srcset="
+              https://d28ewddc5mocr5.cloudfront.net/images/about/about-us-hero-new_sm.webp
+            "
+            media="(max-width: 320px)"
+          />
+          <source
+            srcset="
+              https://d28ewddc5mocr5.cloudfront.net/images/about/about-us-hero-new_md.webp
+            "
+            media="(max-width: 480px)"
+          />
+          <source
+            srcset="
+              https://d28ewddc5mocr5.cloudfront.net/images/about/about-us-hero-new_lg.webp
+            "
+            media="(max-width: 800px)"
+          />
+          <source
+            srcset="
+              https://d28ewddc5mocr5.cloudfront.net/images/about/about-us-hero-new_xl.webp
+            "
+            media="(max-width: 1024px)"
+          />
+          <img
+            fetchpriority="high"
+            src="https://d28ewddc5mocr5.cloudfront.net/images/about/about-us-hero-new_xl.webp"
+            alt="About us"
+            class="about_hero_image"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <!-- small scale section  -->
+    <section class="small_scale">
+      <div class="smallSacle-wrapper">
+        <div class="small_scale_row">
+          <div class="small_scale_col">
+            <h4 class="small_scale_title">
+              From a small-scale B2B food delivery platform to
+              <span>India’s no. 1 restaurant billing software provider</span>
+            </h4>
+            <picture>
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/B2B-food-delivery_sm.webp
+                "
+                media="(max-width: 320px)"
+              />
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/B2B-food-delivery_md.webp
+                "
+                media="(max-width: 480px)"
+              />
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/B2B-food-delivery_lg.webp
+                "
+                media="(max-width: 800px)"
+              />
+              <img
+                loading="lazy"
+                src="https://d28ewddc5mocr5.cloudfront.net/images/about/B2B-food-delivery.webp"
+                alt="From a small-scale B2B food delivery platform to India’s no. 1 restaurant billing software provider"
+                class="small_scale_img"
+              />
+            </picture>
+          </div>
+          <div class="small_scale_col">
+            <p class="small_scale_parag">
+              When Petpooja’s first avatar came into being in 2011, it was a
+              simple B2B food delivery model that took bulk food orders from the
+              corporates & passed them forward to the restaurants. But soon, our
+              founders realised that the restaurants they worked with were not
+              living up to their potential and were shutting down forever.
+              Primarily it was due to a lack of coherent technology that could
+              support their daily operations. Their billing machines were as
+              bulky, tedious and old as time. Due to this, the restaurants never
+              had an actual estimate of their profit margins & expenses. Back
+              then, restaurants were suffering more than growing.
+            </p>
+            <p class="small_scale_parag">
+              This was when our founders decided to build a robust,
+              user-friendly & cost-effective billing software for SMB
+              restaurants that will automate everyday operations and push
+              businesses towards sustainability.
+            </p>
+            <p class="small_scale_parag">
+              And now, a decade into the industry, we have realized our dream of
+              becoming the ideal restaurant billing solution provider to all &
+              every kind of food service business in India.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- empowering restaurants section  -->
+    <section class="empowering-restaurant">
+      <div class="empowering-restaurant-wrapper">
+        <div class="section-heading">
+          <h1 class="title-name">Empowering Restaurant Ecosystem</h1>
+          <p class="title-desc">
+            Streamline the unorganized sector of the food industry
+          </p>
+        </div>
+
+        <div class="empowering-box">
+          <div class="empowering-wrapper">
+            <div class="empowering-details">
+              <h3>Innovation</h3>
+              <p>
+                The major force behind our success has always been constant
+                research & innovation.
+              </p>
+            </div>
+            <img
+              src="https://d28ewddc5mocr5.cloudfront.net/images/about/Innovation.webp"
+              alt="Innovation"
+            />
+            <div class="empowering-innovation-grid">
+              <picture>
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/Innovation-1_sm.webp
+                  "
+                  media="(max-width: 320px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/Innovation-1_md.webp
+                  "
+                  media="(max-width: 480px)"
+                />
+                <img
+                  loading="lazy"
+                  src="https://d28ewddc5mocr5.cloudfront.net/images/about/Innovation-1.webp"
+                  alt="Innovation"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/Innovation-2_sm.webp
+                  "
+                  media="(max-width: 320px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/Innovation-2_md.webp
+                  "
+                  media="(max-width: 480px)"
+                />
+                <img
+                  loading="lazy"
+                  src="https://d28ewddc5mocr5.cloudfront.net/images/about/Innovation-2.webp"
+                  alt="Innovation"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/Innovation-3_sm.webp
+                  "
+                  media="(max-width: 320px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/Innovation-3_md.webp
+                  "
+                  media="(max-width: 480px)"
+                />
+                <img
+                  loading="lazy"
+                  src="https://d28ewddc5mocr5.cloudfront.net/images/about/Innovation-3.webp"
+                  alt="Innovation"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="empowering-box">
+          <div class="empowering-wrapper">
+            <div class="empowering-details">
+              <h3>Simplicity</h3>
+              <p>
+                We believe in creating solutions that come without any confusing
+                instruction manuals.
+              </p>
+            </div>
+            <img
+              src="https://d28ewddc5mocr5.cloudfront.net/images/about/Simplicity.webp"
+              alt="Simplicity"
+            />
+            <div class="empowering-innovation-grid">
+              <picture>
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/Simplicity-1_sm.webp
+                  "
+                  media="(max-width: 320px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/Simplicity-1_md.webp
+                  "
+                  media="(max-width: 480px)"
+                />
+                <img
+                  loading="lazy"
+                  src="https://d28ewddc5mocr5.cloudfront.net/images/about/Simplicity-1.webp"
+                  alt="Simplicity"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/Simplicity-2_sm.webp
+                  "
+                  media="(max-width: 320px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/Simplicity-2_md.webp
+                  "
+                  media="(max-width: 480px)"
+                />
+                <img
+                  loading="lazy"
+                  src="https://d28ewddc5mocr5.cloudfront.net/images/about/Simplicity-2.webp"
+                  alt="Simplicity"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="empowering-box">
+          <div class="empowering-wrapper">
+            <div class="empowering-details">
+              <h3>Customer Support</h3>
+              <p>
+                We always ensure that our restaurant partners are heard & their
+                problems resolved.
+              </p>
+            </div>
+            <img
+              src="https://d28ewddc5mocr5.cloudfront.net/images/about/Customer-support.webp"
+              alt="Customer Support"
+            />
+            <div class="empowering-innovation-grid">
+              <picture>
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/Customer-support-1_xs.webp
+                  "
+                  media="(max-width: 240px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/Customer-support-1_sm.webp
+                  "
+                  media="(max-width: 320px)"
+                />
+                <img
+                  loading="lazy"
+                  src="https://d28ewddc5mocr5.cloudfront.net/images/about/Customer-support-1_sm.webp"
+                  alt="Customer-support"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/Customer-support-2_sm.webp
+                  "
+                  media="(max-width: 320px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/Customer-support-2_md.webp
+                  "
+                  media="(max-width: 480px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/Customer-support-2_lg.webp
+                  "
+                  media="(max-width: 800px)"
+                />
+                <img
+                  loading="lazy"
+                  src="https://d28ewddc5mocr5.cloudfront.net/images/about/Customer-support-2_md.webp"
+                  alt="Customer-support"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="empowering-box">
+          <div class="empowering-wrapper">
+            <div class="empowering-details">
+              <h3>Pricing</h3>
+              <p>
+                We are strong believers in transparent & cost-effective pricing
+                of technology.
+              </p>
+            </div>
+            <img
+              src="https://d28ewddc5mocr5.cloudfront.net/images/about/pricing.webp"
+              alt="Pricing"
+            />
+            <div class="empowering-innovation-grid">
+              <picture>
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/about-pricing_sm.webp
+                  "
+                  media="(max-width: 320px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/about-pricing_md.webp
+                  "
+                  media="(max-width: 480px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/about-pricing_lg.webp
+                  "
+                  media="(max-width: 800px)"
+                />
+                <source
+                  srcset="
+                    https://d28ewddc5mocr5.cloudfront.net/images/about/about-pricing_xl.webp
+                  "
+                  media="(max-width: 1024px)"
+                />
+                <img
+                  loading="lazy"
+                  src="https://d28ewddc5mocr5.cloudfront.net/images/about/about-pricing_xl.webp"
+                  alt="pricing"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- serving delicious section  -->
+    <section class="serving-delicious">
+      <div class="serving-wrapper">
+        <div class="section-heading">
+          <h1 class="title-name">Serving those who serve delicious food</h1>
+          <p class="title-desc">
+            We learn, adapt & improve our technology to suit the needs of all
+            our modern users
+          </p>
+        </div>
+        <div class="serving-delicious-row">
+          <div class="serving-delicious-col">
+            <picture>
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/delicious-food_sm.webp
+                "
+                media="(max-width: 320px)"
+              />
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/delicious-food_md.webp
+                "
+                media="(max-width: 480px)"
+              />
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/delicious-food_lg.webp
+                "
+                media="(max-width: 800px)"
+              />
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/delicious-food_xl.webp
+                "
+                media="(max-width: 1024px)"
+              />
+              <img
+                loading="lazy"
+                src="https://d28ewddc5mocr5.cloudfront.net/images/about/delicious-food.webp"
+                alt="Serving those who serve delicious food"
+              />
+            </picture>
+          </div>
+          <div class="serving-delicious-col">
+            <div class="serving-delicious-report">
+              <h3 class="serving-delicious-report-number">75,000+</h3>
+              <p class="serving-delicious-report-desc">
+                Clients across India, UAE, South Africa & expanding further
+              </p>
+            </div>
+            <div class="serving-delicious-report">
+              <h3 class="serving-delicious-report-number">140+</h3>
+              <p class="serving-delicious-report-desc">
+                Cities covered by our on-ground support team
+              </p>
+            </div>
+            <div class="serving-delicious-report">
+              <h3 class="serving-delicious-report-number">25%</h3>
+              <p class="serving-delicious-report-desc">
+                Online order volume on Zomato & Swiggy processed on Petpooja
+              </p>
+            </div>
+            <div class="serving-delicious-report">
+              <h3 class="serving-delicious-report-number">60L</h3>
+              <p class="serving-delicious-report-desc">
+                Bills processed every day hassle & error-free
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- people section  -->
+    <section class="people-behind">
+      <div class="people-wrapper">
+        <div class="section-heading">
+          <h2 class="title-name">People behind Petpooja</h2>
+          <p class="title-desc">
+            Meet the masterminds that pulled all-nighters to make the dream
+            happen
+          </p>
+        </div>
+
+        <div class="people-team-wrapper">
+          <div class="people-team-profile">
+            <picture>
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/Parthiv-Patel_xxs.webp
+                "
+                media="(max-width: 120px)"
+              />
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/Parthiv-Patel_xs.webp
+                "
+                media="(max-width: 240px)"
+              />
+              <img
+                loading="lazy"
+                src="https://d28ewddc5mocr5.cloudfront.net/images/about/Parthiv-Patel.webp"
+                alt="Parthiv Patel"
+                class="people-team-profile-img"
+              />
+            </picture>
+            <p class="people-team-profile-name">Parthiv Patel</p>
+            <p class="people-team-profile-post">Co-founder & CEO</p>
+          </div>
+          <div class="people-team-profile">
+            <picture>
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/Apurv-Patel_xxs.webp
+                "
+                media="(max-width: 120px)"
+              />
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/Apurv-Patel_xs.webp
+                "
+                media="(max-width: 240px)"
+              />
+              <img
+                loading="lazy"
+                src="https://d28ewddc5mocr5.cloudfront.net/images/about/Apurv-Patel.webp"
+                alt="Apurv Patel"
+                class="people-team-profile-img"
+              />
+            </picture>
+            <p class="people-team-profile-name">Apurv Patel</p>
+            <p class="people-team-profile-post">Co-founder & CSO</p>
+          </div>
+        </div>
+
+        <div class="people-growing-team-row">
+          <div class="people-growing-team-col">
+            <picture>
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/growing-team_sm.webp
+                "
+                media="(max-width: 320px)"
+              />
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/growing-team_md.webp
+                "
+                media="(max-width: 480px)"
+              />
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/growing-team_lg.webp
+                "
+                media="(max-width: 800px)"
+              />
+              <img
+                loading="lazy"
+                src="https://d28ewddc5mocr5.cloudfront.net/images/about/growing-team.webp"
+                alt="Petpooja Growing Team"
+                class="people-growing-team-img"
+              />
+            </picture>
+            <div class="people-growing-team-details">
+              <h3 class="people-growing-team-desc">
+                A growing team of 1300+ employees
+              </h3>
+            </div>
+          </div>
+          <div class="people-growing-team-col">
+            <picture>
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/Support-from_sm.webp
+                "
+                media="(max-width: 320px)"
+              />
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/Support-from_md.webp
+                "
+                media="(max-width: 480px)"
+              />
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/Support-from_lg.webp
+                "
+                media="(max-width: 800px)"
+              />
+              <img
+                loading="lazy"
+                src="https://d28ewddc5mocr5.cloudfront.net/images/about/Support-from.webp"
+                alt="Petpooja Employees"
+                class="people-growing-team-img"
+              />
+            </picture>
+            <div class="people-growing-team-details">
+              <h3 class="people-growing-team-desc">
+                Support from 75,000+ restaurants
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- join us section  -->
+    <section class="join-us">
+      <div class="join-wrapper">
+        <div class="join-us-row">
+          <div class="join-us-col">
+            <picture>
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/join_us_sm.webp
+                "
+                media="(max-width: 320px)"
+              />
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/join_us_md.webp
+                "
+                media="(max-width: 480px)"
+              />
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/join_us_lg.webp
+                "
+                media="(max-width: 800px)"
+              />
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/join_us_xl.webp
+                "
+                media="(max-width: 1024px)"
+              />
+              <img
+                loading="lazy"
+                src="https://d28ewddc5mocr5.cloudfront.net/images/about/join_us.webp"
+                alt="Join Us"
+                class="join-us-col-img"
+              />
+            </picture>
+          </div>
+          <div class="join-us-col">
+            <picture>
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/Join-the-team_xxs.webp
+                "
+                media="(max-width: 120px)"
+              />
+              <source
+                srcset="
+                  https://d28ewddc5mocr5.cloudfront.net/images/about/Join-the-team_xs.webp
+                "
+                media="(max-width: 240px)"
+              />
+              <img
+                loading="lazy"
+                src="https://d28ewddc5mocr5.cloudfront.net/images/about/Join-the-team.webp"
+                alt="Join Us and Shape the Future"
+                class="join-us-img"
+              />
+            </picture>
+            <h3 class="join-us-desc">
+              Join us and shape the future of the restaurant industry
+            </h3>
+            <a href="/careers" class="btn btn-primary">View Open Positions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- scroll bottom-to-top  -->
+    <div id="scroll-top-btn" class="scroll_to_top_btn">
+      <svg
+        width="14"
+        height="8"
+        viewBox="0 0 14 8"
+        fill="currentcolor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.293 7.707a1 1 0 0 1 0-1.414L6.293 0.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L7 1.414 1.707 7.707a1 1 0 0 1-1.414 0Z"
+        />
+      </svg>
+    </div>
+
+    <!-- free demo section  -->
+    <div class="demo-section container my-5" id="demoForm">
+      <div class="row align-items-center">
+        <!-- Left Side: Form -->
+        <div class="col-md-5">
+          <h2>Schedule a Free Demo</h2>
+          <p>Get in touch with our team to clarify your queries</p>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your full name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="city" class="form-label">City</label>
+              <input
+                type="text"
+                class="form-control"
+                id="city"
+                placeholder="Enter your city"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="restaurant" class="form-label">Restaurant Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="restaurant"
+                placeholder="Enter restaurant name"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Schedule Demo</button>
+          </form>
+        </div>
+        <!-- Right Side: Image -->
+        <div class="col-md-5">
+          <img
+            src="https://d28ewddc5mocr5.cloudfront.net/images/scheduale-form_md.webp"
+            alt="Restaurant Demo"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Footer Top Sections -->
+        <div class="row footer-top">
+          <div class="col-md-6 col-lg-3 footer-section">
+            <h3>POS</h3>
+            <ul>
+              <li>
+                <a href="./../billing/billing.html">Billing</a>
+              </li>
+              <li>
+                <a href="./../inventory/inventory.html">Inventory</a>
+              </li>
+              <li>
+                <a href="./../onlineOrdering/onlineOrdering.html"
+                  >Online Ordering</a
+                >
+              </li>
+              <li>
+                <a href="./../reporting/reporting.html">Reporting</a>
+              </li>
+              <li><a href="./../menu/menu.html">Menu</a></li>
+              <li><a href="./../crm/crm.html">CRM</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3 footer-section">
+            <h3>Outlet Types</h3>
+            <ul>
+              <li><a href="#">Fine Dine</a></li>
+              <li><a href="#">QSR</a></li>
+              <li><a href="#">Cafe</a></li>
+              <li><a href="#">Food Court</a></li>
+              <li><a href="#">Cloud Kitchen</a></li>
+              <li><a href="#">Ice-Creams & Desserts</a></li>
+              <li><a href="#">Bakery</a></li>
+              <li><a href="#">Bar & Brewery</a></li>
+              <li><a href="#">Pizzeria</a></li>
+              <li><a href="#">Lage Chain</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3 footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="/pricing.html">Pricing</a></li>
+              <li><a href="./../about/about.html">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li>
+                <a href="./../support/support.html">Support</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3 footer-section">
+            <h3>Innovit Tree Solutions</h3>
+            <ul>
+              <li>Email: info@innovittree.com</li>
+              <li>Phone: +1 234 567 890</li>
+              <li>
+                Corp Office : 10th Floor, Parinee Cresenzo, C-30, G Block,
+                Bandra Kurla Complex, Bandra East, Mumbai - 400051
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social text-center">
+          <h2>Follow us on Social Media</h2>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom text-center">
+          <p class="copyright">© 2025 All rights reserved - Restaurant</p>
+          <p class="policy">
+            Privacy Policy | Terms & Conditions | Cancellation & Refund Policy
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./../../assets/js/scrollTop.js"></script>
+    <script src="./../../assets/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
